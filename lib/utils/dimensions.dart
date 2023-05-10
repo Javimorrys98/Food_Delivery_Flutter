@@ -13,29 +13,27 @@ class Dimensions{
   //* /////////////////////////////// *//
 
   //*HEIGHT*//
-  static double height10 = screenHeight/84.4;
-  static double height15 = screenHeight/56.27;
-  static double height20 = screenHeight/42.2;  
-  static double height25 = screenHeight/33.76;  
-  static double height30 = screenHeight/28.13;  
-  static double height45 = screenHeight/18.75;  
+  // Si la altura de la pantalla es 844 lo dividimos entre la altura que queremos: 
+  // 844/10=84.4 Para devolver el valor correcto dividimos la altura de la pantalla entre dicho valor.
+
+  // static double height10 = screenHeight/84.4;
+
+  static double responsiveHeight(double height){
+    double scale = 844/height;
+    return screenHeight/scale;
+  }
   //* /////////////////////////////// *//
 
   //*WIDTH*//
-  static double width10 = screenWidth/39.0;
-  static double width15 = screenWidth/26.0;
-  static double width20 = screenWidth/19.5;
-  static double width30 = screenWidth/13.0;
-  static double width45 = screenWidth/8.66;
+  // Si la anchura de la pantalla es 390 lo dividimos entre la anchura que queremos: 
+  // 390/10=39.0 Para devolver el valor correcto dividimos la anchura de la pantalla entre dicho valor.
+
+  // static double width10 = screenWidth/39.0;
+
+  static double responsiveWidth(double width){
+    double scale = 390/width;
+    return screenWidth/scale;
+  }
   //* /////////////////////////////// *//
 
-  //*FONT*//
-  static double font12 = screenHeight/70.33;
-  static double font20 = screenHeight/42.2;
-  //* /////////////////////////////// *//
-
-  //*RADIUS*//
-  static double radius20 = screenHeight/42.2;
-  static double radius30 = screenHeight/28.13;
-  //* /////////////////////////////// *//
 }
