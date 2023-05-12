@@ -85,7 +85,7 @@ class PopularFoodDetail extends StatelessWidget {
                       child: SingleChildScrollView(
                         child: ExpandableTextWidget(
                             text:
-                                "Huevo de gallinas camperas criadas en libertad acompañado de una tosta de pan de centeno, salsa tártara y una reducción de Pedro Ximénez denominación de origen."),
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam auctor, diam at facilisis hendrerit, velit lacus viverra orci, id eleifend ipsum felis eget mauris. Phasellus ac libero risus. Quisque rhoncus, urna bibendum vulputate posuere, diam orci blandit tellus, sit amet dignissim massa dolor convallis nulla. Donec semper laoreet tincidunt. In elementum metus dolor, ac euismod ligula facilisis quis. Duis ac nisl commodo."),
                       ),
                     ),
                   ],
